@@ -139,7 +139,7 @@
         <div class="cta-row">
           <a class="button" href="https://github.com/wasim" target="_blank" rel="noreferrer">GitHub</a>
           <a class="button" href="https://www.linkedin.com/in/wasimakram/?originalSubdomain=dk" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="button" href="mailto:mailwasim@gmail.com">Email</a>
+          <a class="button" id="email-link" href="#" rel="noreferrer">Email</a>
           <a class="button" href="assets/Profile.pdf" target="_blank" rel="noreferrer">Download CV</a>
         </div>
       </section>
@@ -155,5 +155,16 @@
 
       <p class="motif">Stay hungry. Stay foolish.</p>
     </div>
+    <script>
+      (function () {
+        var user = String.fromCharCode(109, 97, 105, 108, 119, 97, 115, 105, 109);
+        var domain = [String.fromCharCode(103, 109, 97, 105, 108), String.fromCharCode(99, 111, 109)].join(".");
+        var link = document.getElementById("email-link");
+        if (link) {
+          link.href = "mailto:" + user + "@" + domain;
+          link.title = user + "@" + domain;
+        }
+      })();
+    </script>
   </body>
 </html>
