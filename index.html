@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wasim Akram</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      body {
+        margin: 0;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: #0e0e0e;
+        color: #f2f2f2;
+      }
+      .page {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 72px 32px 96px;
+      }
+      header {
+        margin-bottom: 56px;
+      }
+      h1 {
+        font-size: clamp(2.5rem, 4vw, 3.4rem);
+        letter-spacing: -0.04em;
+        margin: 0;
+      }
+      .tagline {
+        font-size: 1.15rem;
+        margin-top: 12px;
+        color: rgba(255, 255, 255, 0.72);
+      }
+      section + section {
+        margin-top: 48px;
+      }
+      h2 {
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        margin-bottom: 18px;
+        color: rgba(255, 255, 255, 0.68);
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      ul li {
+        margin-bottom: 16px;
+        line-height: 1.5;
+      }
+      .label {
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.86);
+      }
+      a {
+        color: #5ad1ff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 32px;
+      }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 20px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        color: rgba(255, 255, 255, 0.92);
+        background: rgba(255, 255, 255, 0.04);
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        transition: background 0.2s ease, color 0.2s ease;
+      }
+      .button:hover {
+        background: rgba(90, 209, 255, 0.18);
+        color: #fff;
+      }
+      .motif {
+        margin-top: 48px;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      @media (max-width: 640px) {
+        body {
+          background: #0e0e0e;
+        }
+        .page {
+          padding: 56px 24px;
+        }
+        ul li {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Wasim Akram</h1>
+        <p class="tagline">
+          Principal Data &amp; AI Engineer @ <a href="https://www.vml.com/" target="_blank" rel="noreferrer">VML MAP (WPP)</a> &middot;
+          P1 Affiliated Researcher @ <a href="https://www.aicentre.dk/" target="_blank" rel="noreferrer">AI Centre Denmark</a> &middot; Copenhagen 🇩🇰
+        </p>
+        <p>
+          I build production-grade agentic AI systems and resilient data platforms while studying how sparsity and modularity emerge inside dense language models&mdash;and how to turn that structure into measurable efficiency gains.
+        </p>
+      </header>
+
+      <section>
+        <h2>Snapshot</h2>
+        <ul>
+          <li><span class="label">Day role:</span> Enterprise ML/AI platforms, cost-aware inference, activation-aware monitoring.</li>
+          <li>
+            <span class="label">Research track:</span>
+            <a href="https://github.com/wasim/scaling-specialization-dense-lms" target="_blank" rel="noreferrer">Scaling Specialization in Dense LMs</a>&mdash;activation sparsity, sparse autoencoders, dynamic-k execution.
+          </li>
+          <li>
+            <span class="label">Study plan:</span>
+            Working through
+            <a href="https://whatisintelligence.antikythera.org/" target="_blank" rel="noreferrer">Antikythera&mdash;What Is Intelligence?</a>
+            and replicating Anthropic interpretability studies to stay grounded before extending the frontier.
+          </li>
+          <li><span class="label">Interests:</span> Mechanistic interpretability, sparse autoencoders, scaling laws, activation-efficient inference, trustworthy evaluation.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Links</h2>
+        <div class="cta-row">
+          <a class="button" href="https://github.com/wasim" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button" href="https://www.linkedin.com/in/wasimakram/?originalSubdomain=dk" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="button" href="mailto:mailwasim@gmail.com">Email</a>
+          <a class="button" href="assets/Profile.pdf" target="_blank" rel="noreferrer">Download CV</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Current Research</h2>
+        <ul>
+          <li><span class="label">Measure specialization:</span> Activation sparsity, specialization index, and modularity metrics across the Pythia scaling suite (70M&rarr;1B+).</li>
+          <li><span class="label">Recover interpretable features:</span> Train sparse autoencoders, score monosemanticity, and map circuits tied to IOI, arithmetic, induction, POS/NER probes.</li>
+          <li><span class="label">Exploit structure:</span> Prototype dynamic-k gating, validate causal roles via targeted ablations, and report throughput vs perplexity trade-offs.</li>
+        </ul>
+      </section>
+
+      <p class="motif">Stay hungry. Stay foolish.</p>
+    </div>
+  </body>
+</html>
